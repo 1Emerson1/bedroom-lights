@@ -1,0 +1,41 @@
+<!DOCTYPE html>                                                                 
+   <head>                                                                       
+    <title>{{ title }}</title>                                                  
+    <style type="text/css">                                                     
+        body {                                                                  
+            padding: 0;                                                         
+            margin: 0;                                                          
+        }                                                                       
+        .large_button {                                                         
+            position: absolute;                                                 
+            width: 100%;                                                        
+            height: 50%;                                                        
+            text-align: center;                                                 
+            text-decoration: none;                                              
+            font-size: 1000%;
+            border: 1px solid black;
+
+        }
+        #on { top: 0% }
+        #off { top: 50% }                                                                       
+        .active {                                                                   
+            background-color: #fbf09a;                                          
+            color: rgb(223, 204, 103);                                          
+            text-shadow: 1px 1px 10px #5C4E17;                                  
+        }                                                                       
+        .default {                                                                  
+            background-color: #1e170b;                                             
+            color: rgb(83, 71, 48);                                             
+            text-shadow: 1px 1px 10px #000000;                                  
+        }                                                               
+    </style>                                                                    
+    </head>                                                                     
+    <body>                                                                      
+        <h1>                                                                    
+            <a href="/on" id="on" class="{{on}} large_button">ON</a>                   
+        </h1>                                                                   
+        <h1>                                                                    
+            <a href="/off" id="off" class="{{off}} large_button">OFF</a>                
+        </h1>                                                                   
+    </body>                                                                     
+</html>
